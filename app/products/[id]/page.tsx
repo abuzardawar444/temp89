@@ -6,8 +6,6 @@ import FavoriteToggleButton from "@/components/products/FavoritesToggleButton";
 import AddToCart from "@/components/single-product/AddToCart";
 import ProductRating from "@/components/single-product/ProductRating";
 
-import React from "react";
-
 async function SingleProductPage({ params }: { params: { id: string } }) {
   const product = await fetchSingleProduct(params.id);
   const { name, image, company, description, price } = product;
